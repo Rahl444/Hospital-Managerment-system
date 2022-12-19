@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>User  | Book Appointment</title>
+	
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/vendor/themify-icons/themify-icons.min.css">
+		<link href="/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		<style>
+            body {
+				background-color:#f5fffc
+            }
+            a:hover {
+                border-bottom: 2px solid gray;
+                padding-bottom: 10px;
+            }
+		</style>
+			
+
+
+
+
+	</head>
+	<body>
+		<div id="app">		
+<div >
+				<div class="sidebar-container perfect-scrollbar">
+
+
+					</div>
+			</div>			<div class="app-content">
+			
+								<div class="nithin" style="background-color:#191919; padding:15px;">
+
+									<ul style="  list-style:none ;      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+
+">
+										<li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+											<img src="/images/hosp.png" style="height:45px; width:45px;" />
+
+
+										</li>
+
+										<li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+											Hospital
+
+										</li>
+
+
+
+										<li class="rags;" style="display:inline;  float:right;margin-left:10px; padding-top:25px;">
+
+											<a href="/" style="border-bottom:none" onclick="return confirm('Confirm Logout ??')">
+												<img src="/images/log.png" style="height:30px; width:38px;" />
+											</a>
+
+
+										</li>
+
+										
+
+										
+										<li class="rag;" style="display:inline;font-size:17px; color:white; float:right;padding-top:30px; font-family:Arial;">
+											<a href="/patients" style="color:white" onclick="return confirm('Appointment Booked Successfully')">
+												Dashboard
+											</a>
+
+										</li>
+										
+
+
+									</ul>
+
+								</div>
+			<br />
+			<br />
+			<br />
+			<div  >
+					<div class="wrap-content container" id="container">
+						<!-- start: PAGE TITLE -->
+						<section id="page-title">
+							<div class="row">
+								<div class="col-sm-8">
+									<h1 class="mainTitle" style="font-family: Arial;">User | Book Appointment</h1>
+																	</div>
+								
+						</section>
+						<!-- end: PAGE TITLE -->
+						<!-- start: BASIC EXAMPLE -->
+						<div class="container-fluid container-fullw bg-white" >
+							<div class="row" style="margin-left:220px" >
+								<div class="col-md-12"  >
+									
+									<div class="row margin-top-30" >
+										<div class="col-lg-8 col-md-12" >
+											<div class="panel panel-white">
+												<div class="panel-heading">
+													<h5 class="panel-title" style="font-family: Arial;">Book Appointment</h5>
+												</div>
+												<div class="panel-body">
+								<p style="color:red;">								</p>	
+								<form name="book" method="post" action="/auth/book4" onSubmit="return valid();">
+
+
+                                   
+									<br />
+									<div class="form-group" >
+										<label for="time" style="font-family: Arial;">
+											Select time
+										</label>
+										<select name="time" class="form-control" id="doctor"  >
+											<option value="">Select time</option>
+                                            {{#each items}}
+        <option>
+            {{this}}
+        </option>>
+		{{/each}}
+
+										</select>
+
+                                        <div class="form-group">
+										<label for="patientname" style="font-family: Arial;">
+											Problem | Please describe your problem
+										</label>
+										
+										<br />
+										<input type="text" name ="des" size="20" style="width:100%;"  >
+                                        
+									</div>
+									</div>
+
+									<button type="submit" name="submit" class="btn btn-o btn-primary" id="submit" value="submit" onclick="return confirm('Appointment Booked Successfully')">
+										Submit
+									</button>
+								</form>
+								<lable style="font-size:17px;color:red;">{{message}}</lable>
+												</div>
+											</div>
+										</div>
+											
+											</div>
+										</div>
+									
+									</div>
+								</div>
+							
+						<!-- end: BASIC EXAMPLE -->
+			
+					
+					
+						
+						
+					
+						<!-- end: SELECT BOXES -->
+						
+					</div>
+				</div>
+			</div>
+			
+		
+			
+		</div>
+		
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+	</body>
+</html>

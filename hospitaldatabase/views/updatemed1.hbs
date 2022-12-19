@@ -1,0 +1,84 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="/style9.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <div class="nithin" style="background-color:#191919; padding:15px;">
+
+        <ul style="  list-style:none ;      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+
+">
+            <li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+                <img src="/images/hosp.png" style="height:45px; width:45px;" />
+
+
+            </li>
+
+            <li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+                Eco Health
+
+            </li>
+
+
+
+            <li class="rags;" style="display:inline;  float:right;margin-left:10px; padding-top:25px;">
+
+                <a href="/" style="border-bottom:none" onclick="return confirm('Confirm Logout ??')">
+                    <img src="/images/log.png" style="height:30px; width:38px;" />
+                </a>
+
+
+            </li>
+
+
+
+            
+            <li class="rag;" style="display:inline;font-size:17px; color:white; float:right;padding-top:30px; font-family:Arial;">
+                <a href="/adminhome" style="color:white;text-decoration:none;">
+                    Dashboard
+                </a>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+  <form action="/auth/medup1" method="POST">
+  
+    <h1>Add Medicine</h1>
+    
+    <fieldset>
+      
+      <label for="name">Medicine Name:</label>
+      <input type="text" id="mname" name="mname" required="required">
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required="required">
+      
+      <label for="price">Price(in rupees):</label>
+      <input type="number" id="price" name="price" required="required">
+
+      <label for="dom">Date of Manufacture(mm-yyyy):</label>
+      <input type="text" id="dom" name="dom">
+      
+      <label for="bestbefore">Best Before(in months):</label>
+      <input type="number" id="bestbefore" name="bestbefore" required="required">
+      
+    </fieldset>
+    
+   
+    <button type="submit">Add/Update</button>
+  </form>
+  
+</body>
+</html>

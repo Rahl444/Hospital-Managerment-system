@@ -1,0 +1,131 @@
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles9.css">
+
+    
+</head>
+<body>
+  
+  <div class="hero-image">
+  <div class="main-content">
+    <div style="margin-left: 520px;">
+      <ul>
+      
+      <li style="display: inline;margin-top:40px;">
+      <a href="/patients" class = "center2" style="font-size:45px;">Eco Health</a></li>
+      </ul>>
+    </div>
+    
+    <div>
+        <h1 class = "center2">PROFILE PAGE</h1>
+        
+        
+      </div><br>
+    
+
+    <!-- Page content -->
+    
+    <div class="center1" >
+    <div>
+      <div class="row">
+        
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">My account</h3>
+                </div>
+                <div class="col-4 text-right">
+                  <a href="/" class="btn btn-sm btn-primary" onclick="return confirm('Confirm Logout ??')">Logout</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">User information</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Username</label></br>
+                        <label id="username" >{{username}}</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Email address</label></br>
+                        <label id = "email"  contenteditable="true">{{email}}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">Gender</label></br>
+                        <label id = "gender" contenteditable="true">{{gender}}</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">Name</label></br>
+                        <label id = "name" contenteditable="true">{{name}}</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Address -->
+                <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Contact Number</label></br>
+                        <label id = "phone" contenteditable="true">{{phone}}</label>
+                      </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+                  <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label  class="form-control-label" for="input-city">City</label></br>
+                        <label id = "city" contenteditable="true">{{city}}</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">Country</label></br>
+                        <label>India</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+                </div>
+                
+              </form>
+            </div>
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center" style="margin-left:200px;">
+                
+                <div class="col-4 text-right">
+                  <button onclick="update();" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="/profile.js"></script>
+</body>

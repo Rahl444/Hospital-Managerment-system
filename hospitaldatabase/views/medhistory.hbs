@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Medicines</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/themify-icons/themify-icons.min.css">
+    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
+    <link href="/vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/plugins.css">
+    <link rel="stylesheet" href="/assets/css/themes/theme-1.css" id="skin_color" />
+    <style>
+        body {
+            background-color: #f5fffc;
+        }
+
+        a:hover {
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+        }
+
+        .bac {
+            background-image: url("C:/Users/nithi/Downloads/24817.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; /* Needed to position the navbar */
+            position: relative;
+            min-height: 630px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+</head>
+<body>
+    <div class="nithin" style="background-color:#191919; padding:15px;">
+
+        <ul style="  list-style:none ;      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+
+">
+            <li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+                <img src="/images/hosp.png" style="height:45px; width:45px;" />
+
+
+            </li>
+
+            <li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+                Eco Health
+
+            </li>
+
+
+
+            <li class="rags;" style="display:inline;  float:right;margin-left:10px; padding-top:25px;">
+
+                <a style="border-bottom:none">
+                    <img src="/images/log.png" style="height:30px; width:38px;" />
+                </a>
+
+
+            </li>
+
+
+
+            <li class="rags;" style="display:inline; color:white;font-size:17px; float:right;margin-left:10px; padding-top:30px;  font-family:Arial;">
+                <a href="/index" style="color:white">
+                    Medicines
+                </a>
+
+            </li>
+            <li class="rag;" style="display:inline;font-size:17px; color:white; float:right;padding-top:30px; font-family:Arial;">
+                <a href="/patients" style="color:white">
+                    Dashboard
+                </a>
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+
+    <div class="bac">
+        <div style="margin-left:150px">
+            <div style="position:absolute">
+                <div class="wrap-content container" id="container">
+                    <!-- start: PAGE TITLE -->
+                    <section id="page-title">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h1 class="mainTitle" style="font-family:Arial, Helvetica, sans-serif;margin-left:400px">My Medicines</h1>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- end: PAGE TITLE -->
+                    <!-- start: BASIC EXAMPLE -->
+                    <div class="container-fluid container-fullw bg-white">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p style="color:red;">								</p>
+                                <table class="table table-hover" id="sample-table-1">
+                                    <thead style="font-family: Arial;">
+                                        <tr>
+                                            
+                                            <th class="hidden-xs">Medicine Name</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+    {{#each items}}
+        <tr>
+            <td>{{this.mname}}</td>
+            <td>{{this.quantity}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+		{{/each}}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end: BASIC EXAMPLE -->
+                    <!-- end: SELECT BOXES -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

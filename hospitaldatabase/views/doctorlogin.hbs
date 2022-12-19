@@ -1,0 +1,236 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>User-Login</title>
+
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+		<style>
+            html, body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #8e8e93;
+  direction: ltr;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  
+  -webkit-font-smoothing: antialiased !important;
+
+  background-image: url("images/doclog.jpg");
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	color: black ;
+}
+.nav1 {
+ background: rgb(36, 35, 35);
+ padding-top:5px;
+ padding-bottom: 45px;
+}
+.head1{
+	color: grey;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+input[type=text]:hover {
+  width: 50%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgb(211, 208, 208);
+}
+input[type=password], select {
+  width: 50%;
+  padding: 8px 12px;
+  margin: 8px 0;
+	position: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+	right: 50%;
+	left: 50%;
+}
+input[type=password]:hover {
+  width: 50%;
+  padding: 8px 12px;
+  margin: 8px 0;
+	position: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgb(211, 208, 208);
+	right: 50%;
+	left: 50%;
+}
+.box-login{
+	width:30%;
+	padding: 0px 0px 0px 0px;
+	border-radius: 4px;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.form-login{
+	border-radius: 4px;
+	text-align: center;
+}
+.box{
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 20px 15px 25px 15px;
+	background: white;
+}
+button{
+	color: white;
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width:40%;
+	background: rgb(23, 99, 23);
+	border: thin;
+}
+button:hover{
+	color: white;
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width:40%;
+	background: rgb(12, 51, 12);
+	border: thin;
+}
+ </style>
+
+
+	</head>
+	<body class="login">
+		
+		<div class="nithin" style="background-color:#191919; padding:15px;">
+
+					<ul style="  list-style:none ;      list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+
+">
+						<li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+							<img src="/images/max.png" style="height:45px; width:45px;" />
+
+
+						</li>
+
+						<li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+							Eco Health	
+
+						</li>
+
+
+						<li class="rags;" style="display:inline; color:white;font-size:20px; float:right;margin-left:10px; padding-top:30px;  font-family:Arial;margin-right:20px;">
+							<a href="/" style="color:white">
+								Home
+							</a>
+
+						</li>
+
+
+					</ul>
+
+				</div>
+		<div class="row">
+			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+
+				<div class="box-login">
+					
+					<form class="form-login" action="/auth/doclogin" method="post" >
+						<fieldset class="box">
+							<img src="/images/Profile-ICon.png" alt="image" style="height: 60px;width:60px;">
+							<p style="color:black;font-size:20px;text-align:center;padding:5px;margin-top:0px;">
+								Sign in
+							</p>
+							
+							<div class="form-group">
+								<span class="input-icon">
+									<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+									<i class="fa fa-user"></i> </span>
+							</div>
+							<div class="form-group form-actions">
+								<span class="input-icon">
+									<input type="password" class="form-control password" id="password" name="password" placeholder="Password" required>
+									<i class="fa fa-lock"></i>
+							</div>
+							<div class="form-actions">
+
+								<button type="submit" class="btn btn-primary pull-right" name="submit" onclick="send1()">
+									Login <i class="fa fa-arrow-circle-right"></i>
+								</button>
+							</div>
+							
+						</fieldset>
+						<lable style="font-size:17px;color:red;">{{message}}</lable>
+					</form>
+
+
+
+				</div>
+
+			</div>
+		</div>
+		
+	<script>
+		function send1(){
+			const us1 = document.getElementById('username').value;
+			localStorage.setItem("doc1",us1);
+			//alert("user sent");
+			return;
+		}
+	</script>
+
+	</body>
+	<!-- end: BODY -->
+</html>

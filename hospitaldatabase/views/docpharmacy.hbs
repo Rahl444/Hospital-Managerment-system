@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Doctors  | Pharmacy</title>
+		
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="/vendor/themify-icons/themify-icons.min.css">
+		<link href="/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
+		<link href="/vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<link rel="stylesheet" href="/assets/css/plugins.css">
+		<link rel="stylesheet" href="/assets/css/themes/theme-1.css" id="skin_color" />
+		<link rel="StyleSheet1" href="styles.css" />
+		<style>
+			
+            h2 {
+				color:green
+            }
+          
+			html,body{
+				background-color:#f5fffc; height:100%; width:100%;
+			}
+
+            .google:hover{
+				background:#d7f0f1;
+            }
+            a:hover {
+                border-bottom: 2px solid gray; padding-bottom:10px;
+            }
+            .bac {
+                background-image: url("/images/pharm.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* Needed to position the navbar */
+                position: relative;
+                min-height: 700px;
+            }
+
+
+
+            table, th, td {
+                border: 1px solid black;
+                padding: 15px;
+                border-collapse: collapse;
+				text-align:center;
+            }
+
+
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            h1 {
+                color: white;
+            }
+
+		</style>
+
+		
+	<script src="/myscripts.js"></script>
+	</head>
+	<body>
+		<div id="app" style="margin-bottom:0;padding:0">
+					<div class="app-content" style="margin-bottom:0; padding:0">
+
+
+
+				<div class="nithin" style="background-color:#191919; padding:15px;">
+
+					<ul style="  list-style:none ;      list-style-type: none;margin: 0;padding: 0;overflow: hidden;
+
+
+">
+						<li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+							<img src="/images/max.png" style="height:45px; width:45px;" />
+
+
+						</li>
+
+						<li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+							Eco Health
+
+						</li>
+
+
+
+						<li class="rags;" style="display:inline;  float:right;margin-left:10px; padding-top:16px;">
+
+							<a href="/" style="border-bottom:none" onclick="returm confirm('Confirm Logout')">
+								<img src="/images/log.png" style="height:30px; width:38px;" />
+							</a>
+
+
+						</li>
+
+
+						<li class="rag;" style="display:inline;font-size:17px; color:white; float:right;padding-top:30px; font-family:Arial;">
+							<a href="/doc" style="color:white">
+								Dashboard
+							</a>
+
+						</li>
+
+
+					</ul>
+
+				</div>
+
+
+
+				
+
+				<!-- end: TOP NAVBAR -->
+				<div class="bac" >
+
+					<div style="position:relative;">
+						<div class="wrap-content container" id="container" style="margin-bottom:0; padding:0;margin-left:70px;">
+							<!-- start: PAGE TITLE -->
+							<section id="page-title" style="border-bottom:none">
+								<div class="row" style="margin-left:100px; margin-top:50px">
+									<div class="col-sm-8">
+										<h1 class="mainTitle" style="font-family: Arial;">Pharmacy</h1>
+									</div>
+
+
+								</div>
+							</section>
+							<!-- end: PAGE TITLE -->
+							<!-- start: BASIC EXAMPLE -->
+							
+								
+							<table name ="meds" id ="meds" style="margin-left:50px;margin-bottom:30px; width:100%; color:black">    
+
+								<tr>
+									<th style="font-size:20px; width:90px">
+										#
+									</th>
+									<th style="font-size:20px; width:200px">
+										Medicine Name
+									</th>
+									<th style="font-size:20px; width:150px">
+										Quantity
+									</th>
+									<th  style="font-size:20px;width:90px">
+										Price
+									</th>
+								</tr>
+
+							
+{{#each items}}
+
+        <tr>
+			<td>{{@index}}</td>
+            <td>{{this.mname}}</td>
+            <td>{{this.quantity}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+		{{/each}}
+
+							</table>
+							<a href="/updatemed" style="text-decoration: none;border:none;margin-left:500px;margin-top:50px;"><button style="font-size:15px;color: white;background-color:rgb(3, 101, 139);padding:12px;border-radius:15px;">Add / Update Medicines</button></a>
+
+
+					
+							
+
+
+
+
+
+
+
+
+
+
+
+							<!-- end: SELECT BOXES -->
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			
+
+		</div>
+
+
+
+		
+			
+
+			
+		
+
+
+
+	</body>
+</html>

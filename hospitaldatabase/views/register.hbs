@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>User Registration</title>
+
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+
+		<style>
+		html, body {
+		  height: 100%;
+  width: 100%;
+  margin:0;
+  border: 0;
+  outline: 0;
+		}
+
+		html {
+		  font-size: 100%;
+		}
+
+		body {
+		  color: #8e8e93;
+		  direction: ltr;
+		  overflow-x: hidden;
+		  height: 100%;
+		  font-family: Helvetica, Arial, sans-serif;
+		  font-size: 13px;
+		  background:#F8F8F8;
+		  -webkit-font-smoothing: antialiased !important;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+
+		}
+		.box-register{
+			width:50%;
+	padding: 0px 0px 0px 0px;
+	border-radius: 10px;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+		}
+		.box2{
+			padding: 10px 10px;
+			padding-bottom: 20px;
+			border-radius: 10px;
+			background: white;
+		}
+		.nav1 {
+ background: rgb(36, 35, 35);
+ padding-top:5px;
+ padding-bottom: 45px;
+}
+		input[type=text]:hover {
+  width: 40%;
+  padding: 5px 10px;
+  margin: 8px 0;
+	margin-left: 8px;
+	margin-right: 33px;
+	background: #F0FFF0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+		input[type=text], select {
+  width: 40%;
+  padding: 5px 10px;
+  margin: 8px 0;
+	margin-left: 10px;
+	margin-right: 35px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+width: 40%;
+padding: 5px 10px;
+margin: 8px 0;
+margin-left: 10px;
+margin-right: 35px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=email]:hover {
+width: 40%;
+padding: 5px 10px;
+margin: 8px 0;
+margin-left: 8px;
+margin-right: 33px;
+display: inline-block;
+background: #F0FFF0;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-sizing: border-box;
+}
+input[type=password], select {
+  width: 40%;
+  padding: 5px 10px;
+  margin: 8px 0;
+	position: center;
+  display: inline-block;
+	margin-left: 10px;
+	margin-right: 35px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	right: 50%;
+	left: 50%;
+}
+input[type=password]:hover {
+  width: 40%;
+  padding: 5px 10px;
+  margin: 8px 0;
+	margin-left: 8px;
+	margin-right: 33px;
+	position: center;
+  display: inline-block;
+	background: #F0FFF0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+	right: 50%;
+	left: 50%;
+}
+button {
+	background-color:  #F0FFF0;
+	border-radius: 4px;
+	width: 30%;
+	padding: 5px 8px;
+	border-width: thin;
+
+}
+button:hover{
+	background-color: white;
+	width: 30%;
+	padding: 5px 8px;
+}
+.form-actions1{
+	text-align: center;
+	width: 100%;
+
+}
+p{
+	margin-left:10px;
+}
+		</style>
+
+		
+
+	</head>
+
+	<body class="login">
+		<div class="nav1">
+			<ul style="list-style-type: none;">
+				<li style="display: inline;float:left"><img src="/images/logo.png" alt="image" style="height: 37px;width:37px;"></li>
+				<li style="display: inline;font-size:25px;float:left;padding-top:2px;margin-left:5px;"><a href="/home" style="color:white;">Hospital</a></li>
+			</ul>
+		</div>
+		<!-- start: REGISTRATION -->
+		<div class="row">
+			<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+				<!-- start: REGISTER BOX -->
+				<div class="box-register">
+					<form name="registration" class="boxq1" id="registration"  action="/auth/reg" method="post" onSubmit="return valid();">
+						<fieldset class="box2">
+							<legend style="font-size: 25px;color:black;padding:5px;">
+								Sign Up
+							</legend>
+							<p >
+								Enter your personal details below:
+							</p>
+							<div class="form-group">
+								<input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
+								<input type="text" class="form-control" name="phoneNumber" placeholder="phoneNumber" required>
+							</div>
+
+							<div class="form-group">
+								<input type="text" class="form-control" name="city" placeholder="City" required>
+								<label class="block" style="margin-left:15px;font-size:16px;">
+									Gender
+								</label>
+									<input type="radio" id="rg-female" name="gender" value="female" >
+									<label for="rg-female">
+										Female
+									</label>
+									<input type="radio" id="rg-male" name="gender" value="male">
+									<label for="rg-male">
+										Male
+									</label>
+
+							</div>
+
+							<p >
+								Enter your account details below:
+							</p>
+							<div class="form-group">
+								<span class="input-icon">
+									<input type="email" class="form-control" name="email" id="email" onBlur="userAvailability()"  placeholder="Email" required>
+									<i class="fa fa-envelope"></i> </span>
+									 <span id="user-availability-status1" style="font-size:12px;"></span>
+									<input type="text" class="form-control" name="username" id="username" onBlur="userAvailability()"  placeholder="username" required>
+ 									<i class="fa fa-envelope"></i> </span>
+ 									 <span id="user-availability-status1" style="font-size:12px;"></span>
+							</div>
+							<div class="form-group">
+								<span class="input-icon">
+									<input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+									<i class="fa fa-lock"></i> </span>
+									<span class="input-icon">
+										<input type="password" class="form-control"  id="password_again" name="password_again" placeholder="Password Again" required>
+										<i class="fa fa-lock"></i> </span>
+							</div>
+
+							<div class="form-group">
+								<div class="checkbox clip-check check-primary">
+									<input type="checkbox" id="agree" value="agree" checked="true" readonly=" true">
+									<label for="agree">
+										I agree
+									</label>
+								</div>
+							</div>
+							<div class="form-actions1">
+
+								<button type="submit" class="btn btn-primary pull-right" id="submit" name="submit" >
+									Submit <i class="fa fa-arrow-circle-right"></i>
+								</button>
+							</div>
+							<lable>{{message}}</lable>
+						</fieldset>
+					</form>
+					<p>
+						Already have an account?
+						<a href="/patients_login">
+							Log-in
+						</a>
+					</p>
+
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+	</body>
+	<!-- end: BODY -->
+</html>

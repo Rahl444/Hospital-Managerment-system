@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin | Doctors Info</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/vendor/themify-icons/themify-icons.min.css">
+	<link href="/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
+	<link href="/vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/plugins.css">
+	<link rel="stylesheet" href="/assets/css/themes/theme-1.css" id="skin_color" />
+
+	<style>
+		body {
+			background-color:#f5fffc
+		}
+        a:hover {
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+        }
+
+        .bac {
+            background-image: url("/images/dif.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            min-height: 700px;
+        }
+		.addbutt{
+			width:300px;border:none;padding:10px;
+
+		}
+		.addbutt:hover{
+			background-color: grey;
+			border-radius: 10px;
+		}
+
+	</style>
+
+</head>
+	<body>
+		<div id="app">		
+<div >
+				<div class="sidebar-container perfect-scrollbar" position="absolute">
+
+
+					</div>
+			</div>			<div class="app-content">
+				
+
+								<div class="nithin" style="background-color:#191919; padding:15px;">
+
+									<ul style="  list-style:none ; list-style-type: none;margin: 0;padding: 0;overflow: hidden;
+
+
+">
+										<li class="rags;" style="display:inline;  float:left;margin-left:10px; padding-top:10px;margin-right:10px">
+
+											<img src="/images/max.png" style="height:45px; width:45px;" />
+
+
+										</li>
+
+										<li class=" rahul" style=" font-size:45px; color:white; font-family:Arial;  display:inline;float:left;">
+											Eco Health
+
+										</li>
+
+
+
+										<li class="rags;" style="display:inline;  float:right;margin-left:10px; padding-top:25px;">
+
+											<a href="/" style="border-bottom:none" onclick="return confirm('Confirm Logout ??')">
+												<img src="/images/log.png" style="height:30px; width:38px;" />
+											</a>
+
+
+										</li>
+
+									
+
+
+										
+										<li class="rag;" style="display:inline;font-size:17px; color:white; float:right;padding-top:30px; font-family:Arial;">
+											<a href="/adminhome" style="color:white">
+												Dashboard
+											</a>
+
+										</li>
+
+
+									</ul>
+
+								</div>
+			
+
+								<div class="bac">
+									<div style="position:relative">
+										<div class="wrap-content container" id="container">
+
+											<section id="page-title">
+												<div class="row">
+													<div class="col-sm-8" style="margin-top:50px">
+														<h1 class="mainTitle" style="font-family: Arial;">Admin | Doctors Info</h1>
+													</div>
+
+												</div>
+											</section>
+
+											<div class="container-fluid container-fullw bg-white">
+
+
+												<div class="row">
+													<div class="col-md-12">
+
+														<p style="color:red;">								</p>
+														<table class="table table-hover" id="sample-table-1">
+															<thead style="font-family: Arial;">
+																<tr>
+																	<th>Doctor Name</th>
+																	<th>Username</th>
+																	<th>Specialization</th>
+																	<th>Age</th>
+                                                                    <th>EmailID</th>
+																	<th>Ph. No.</th>
+																	<th>Branch</th>
+
+																</tr>
+															</thead>
+															<tbody>
+															</tbody>
+                                                        {{#each items}}
+        <tr>
+            
+            <td>{{this.name}}</td>
+            <td>{{this.usernamed}}</td>
+            <td>{{this.spec}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.emailid}}</td>
+            <td>{{this.phonenum}}</td>
+            <td>{{this.branch}}</td>
+
+        </tr>
+		{{/each}}
+														</table>
+
+
+
+
+
+
+													</div>
+
+
+
+												</div>
+											</div>
+
+
+
+
+
+
+										</div>
+										
+										<div style="margin-top:50px; margin-left:500px">
+
+											<button class="addbutt">
+												<a href="/docreg" style=" font-size:20px; color:black; border-bottom:none;border:none">
+													Add a new Doctor
+												</a>
+											</button>
+
+										</div>
+
+
+									</div>
+								</div>
+			</div>
+			
+		
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0;
+  border: 0;
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images/home12.jpg");
+
+  height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+.test{
+    background-image: url("images/pattern.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.3;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  background-color:#00000034;
+  width: 100%;
+  padding:7px;
+}
+.container2 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color:#04c79da4;
+  width: 400px;
+  height: 500px;
+  padding:7px;
+}
+.nav1{
+    display: inline;
+    float:right;
+    padding-top:5px;
+    font-size: 15px;
+    color: white;
+    margin-left: 15px;
+    margin-right:15px;
+}
+button{
+    background-color: rgb(47, 141, 47);
+    color: white;
+    font-size: 15px;
+    padding:13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(17, 61, 119);
+    color: white;
+    font-size: 15px;
+    padding:13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+}
+.box1{
+    background-color: rgb(5, 88, 143);
+    width:100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left:10px ;
+    margin:10px;
+    display:inline
+}
+.container1 {
+            width:100%;
+            height:200px;
+            background-color:white;
+        }
+        
+        #st-box {
+            float:left;
+            width:200px;
+            height:200px;
+            background-color:rgba(0, 0, 255, 0.753);
+        }
+        #nd-box{
+            float:left;
+            width:200px;
+            height:200px;
+            background-color:rgba(2, 2, 179, 0.801);
+        }
+        .pic{
+            position: relative;
+            min-height: 500px;
+            width: 100%;
+            background-image: url("images/pic1.jpg");
+            shape-image-threshold:inherit;
+            background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin-top:30px;
+
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+            background-color: rgba(255, 255, 255, 0.473);
+            border-bottom: 2px solid white;
+            padding:5px;
+        }
+        li{
+            list-style: none;
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+        }
+        .each{
+            background-color:white;height:190px;width:210px;margin-left:200px;margin-bottom:100px;position: absolute;margin-top: 60px;border-radius:50px;display:inline;border:2px solid rgba(68, 68, 68, 0.493);padding:10px;
+        }
+        .each:hover{
+            background-color:white;opacity:0.8;height:190px;width:210px;margin-left:200px;margin-bottom:100px;position: absolute;margin-top: 60px;border-radius:60px;display:inline;border: none;
+        }
+        .each1{
+            background-color:white;height:190px;text-align:center;width:210px;margin-left: 550px;margin-bottom:100px;position: absolute;border-radius:50px;margin-top: 60px;display:inline;border:2px solid rgba(68, 68, 68, 0.493);padding:10px;
+        }
+        .each1:hover{
+            background-color:white;height:190px;opacity:0.8;text-align:center;width:210px;margin-left: 550px;margin-bottom:100px;position: absolute;margin-top: 60px;border-radius:60px;display:inline;border: none;
+        }
+        .each2{
+            background-color:white;height:190px;width:210px;margin-left: 900px;margin-bottom:100px;position: absolute;margin-top: 60px;display:inline;border-radius:50px;border:2px solid rgba(68, 68, 68, 0.493);padding:10px;
+        }
+        .each2:hover{
+            background-color:white;height:190px;width:210px;opacity:0.8;margin-left: 900px;margin-bottom:100px;position: absolute;margin-top: 60px;display:inline;border-radius:60px;border: none;
+        }
+        .patter{position: relative;
+                margin-top: 40px;
+                margin-bottom:50px;
+                text-align: center;
+                padding: 60px;
+                min-height: 400px;
+                background-image: url("images/a.jpg");
+                background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+        .comment{
+            font-size:25px;
+            color: black;
+            padding-top:60px;
+            margin-left: 650px;
+        }
+        .contact{
+				font-size:15px; color: white; padding-top:10px;
+			}
+        .container10 {
+                width: 100%;
+                height: 700px;
+                background-color: #191919;
+                padding-top: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+				
+            }
+            .foot{
+                margin-top: 500px;
+                position: relative;
+                min-height: 520px;
+                
+                background-image: url("images/cover.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;background-size: cover;
+            }
+            .bookp{
+                text-decoration: none;
+            }
+            .bookp:hover{
+                text-decoration: none;
+                border: 0;
+                border-bottom: none;
+                background-color: none;
+
+            }
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="bg-img">
+        <div class="container">
+            <ul>
+                <li style="display: inline;float: left;font-size:33px;color: white;margin-left: 20px;padding-bottom: 7px;">
+                    Eco Health
+                </li >
+                
+                <li class="nav1" style="font-size: 20px;margin-right:100px;margin-top:10px;">
+                    <a href="/contact">Contact Us</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        
+        <div style="font-size:50px;float: right;margin-right: 140px;margin-top: 230px;color:white;width:400px;">
+            We Care about your Health
+            <br/>
+            <div style="font-size: 15px;margin-top: 10px;margin-bottom: 0;">We are the best hospital in the world.We are the best hospital in the world.We are the best hospital in the world</div>
+            <a href="/patients_login" class="bookp"><button >Book an Appoinment</button></a>
+        </div>
+
+      </div>
+      <div class="test">
+          <div style="absolute;padding-top:60px;padding-bottom:90px;color:black;text-align:center;">
+              <h1 style="color:blue">About EcoHealthCare</h1><br/> <div style="width:70%;margin-left:220px;font-size:20px;color:black;">We take health care personally at Eco Health. Because excellence in health care is about more than just medicine, technology, tests and treatments. It is about really caring for people with dignity and respect. That’s what we do. We are dedicated to providing the best care to meet the needs of people – for our community, for our patients -- for you.</div>
+
+          </div>
+
+      </div>
+    
+      <div class="pic">
+        <div class="container2">
+            
+            <ul>
+                <li style="font-size: 25px;margin-top:20px;padding:0px;">Eco Helthcare Specialities</li>
+                <li style="padding-top:20px;font-size:17px;padding:0px;margin-top:40px;"><img src="/images/pic14.png" style="width:25px;heigth:25px;margin-right:10px;">lab & Pharmacy</li>
+                <li style="padding-top:20px;font-size:17px;padding:0px;margin-top:40px;"><img src="/images/pic15.png" style="width:25px;heigth:25px;margin-right:10px;">Minimal invasive Surgery</li>
+                <li style="padding-top:20px;font-size:17px;padding:0px;margin-top:40px;"><img src="/images/pic13.png" style="width:25px;heigth:25px;margin-right:10px;">24 hours casualty & ambulance service</li>
+                <li style="padding-top:20px;font-size:17px;padding:0px;margin-top:40px;"><img src="/images/pic16.png" style="width:25px;heigth:25px;margin-right:10px;">other clinics and departments</li>
+                <li style="padding-top:20px;font-size:17px;padding:0px;margin-top:40px;"><img src="/images/otherclinics.png" style="width:25px;heigth:25px;margin-right:10px;">other clinics and departments</li>
+            </ul>
+        </div>
+        <div style="position: absolute;">
+            <ul>
+                <li class="comment"><img src="/images/pic12.png" style="width:40px;heigth:40px;margin-right:50px;">24/7 Service</li>
+                <li class="comment"><img src="/images/trusted.png" style="width:50px;heigth:50px;margin-right:40px;">Trusted Doctors</li>
+                <li class="comment"><img src="/images/reliable.png" style="width:50px;heigth:50px;margin-right:40px;">Reliable Service</li>
+            </ul>
+        </div>
+      </div>
+    <div style="position: absolute;margin-top:60px;margin-bottom:20px;display:inline">
+    <div style="relative;text-align:center;font-size:45px;margin-top:20px;margin-left:600px;">
+        <div style="color:rgb(0, 107, 247);display:inline">Log</div>in
+
+    </div>
+    <div class="each">
+                <div style="color: black;font-size: 22px;text-align: center;margin-top: 20px;position:relative;">
+                    <img src="/images/pic3.png" style="height:90px;width:90px;">
+                    <br/>
+                    <a href="/patients_login" style="text-decoration: none;font-size:22px;color:black;">Patient</a>
+                </div>
+        </div>
+        <div class="each1" >
+            <div style="color: black;font-size: 22px;text-align: center;margin-top: 20px;">
+                <img src="/images/pic4.png" style="height:90px;width:90px;">
+                    <br/>
+                <a href="/doctor" style="text-decoration: none;font-size:22px;color:black;">Doctors</a>
+            </div>
+        </div>
+        <div class="each2" >
+            <div style="color: black;font-size: 22px;text-align: center;margin-top: 20px;">
+                <img src="/images/pic6.png" style="height:90px;width:90px;">
+                <br/>
+                <a href="/admin" style="text-decoration: none;font-size:22px;color:black;">Admin</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+
+    </div>
+  
+    
+
+    
+     
+
+</body>
+</html> 
